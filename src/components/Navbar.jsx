@@ -67,7 +67,7 @@ const Navbar = () => {
               key={index}
               className="flex flex-col items-center justify-center">
               <li
-                className={`cursor-pointer text-center hover:text-white w-full py-3 hover:bg-[#ff0000]${
+                className={`cursor-pointer border-b border-neutral-200 text-center hover:text-white w-full py-3 hover:bg-[#ff0000]${
                   index === 0 ? " text-white bg-[#ff0000] w-full" : ""
                 }`}>
                 {item}

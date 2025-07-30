@@ -40,3 +40,17 @@
 .read-the-docs {
   color: #888;
 }
+
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #000;
+  
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.swiper-button-disabled {
+  opacity: 0.3;
+}

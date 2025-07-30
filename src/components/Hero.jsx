@@ -1,10 +1,10 @@
 import React from "react";
 import { HiCheckCircle } from "react-icons/hi";
 import ServiceCard from "./ServiceCard";
-import { CiHeart } from "react-icons/ci";
 import Icons from "./Icons";
 import OurClients from "./OurClients";
 import Gallery from "./Gallery";
+import { motion } from "framer-motion";
 
 const services = [
   "Corporate Profile",
@@ -54,7 +54,10 @@ const Hero = () => {
   return (
     <section>
       <div className="md:flex">
-        <div>
+        <motion.div
+          initial={{ x: -150, opacity: 0 }}
+          animate={{ x: 0, opacity: 2 }}
+          transition={{ duration: 1 }}>
           <h1 className="text-5xl md:text-[85px] font-bold text-gray-800">
             Website
             <br />
@@ -70,7 +73,7 @@ const Hero = () => {
             businesses on their journey of digital transformation. With
             cutting-edge technologies and a team of skilled professionals.
           </p>
-        </div>
+        </motion.div>
         {/* Right Image Content */}
         <div className=" flex justify-center ">
           <div className="relative w-72 h-72 md:w-[380px] md:h-[380px] mr-5 md:mr-32 md:ml-10">
